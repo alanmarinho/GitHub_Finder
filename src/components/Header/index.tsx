@@ -9,7 +9,7 @@ interface Props {
 export const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <S.Container>
-      <Link to={"/"}><S.LogoContainer><img src='Assets\Ivory.png' /></S.LogoContainer></Link>
+      <Link to={"/"}><S.LogoContainer><img src='../../Assets/ivory.png' /></S.LogoContainer></Link>
       <S.MenuContainer>
         <Link to={"/"}><S.MenuButton>Home</S.MenuButton></Link>
         <Switch onChange={toggleTheme} />

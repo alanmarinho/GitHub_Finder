@@ -164,7 +164,7 @@ display: none;
   &:hover {
     text-decoration: underline;
   }
-`,c1=({toggleTheme:e})=>$.jsxs(i1,{children:[$.jsx(pu,{to:"/",children:$.jsx(a1,{children:$.jsx("img",{src:"Assets\\Ivory.png"})})}),$.jsxs(u1,{children:[$.jsx(pu,{to:"/",children:$.jsx(s1,{children:"Home"})}),$.jsx(l1,{onChange:e})]})]}),f1=ue.div`
+`,c1=({toggleTheme:e})=>$.jsxs(i1,{children:[$.jsx(pu,{to:"/",children:$.jsx(a1,{children:$.jsx("img",{src:"../../Assets/ivory.png"})})}),$.jsxs(u1,{children:[$.jsx(pu,{to:"/",children:$.jsx(s1,{children:"Home"})}),$.jsx(l1,{onChange:e})]})]}),f1=ue.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

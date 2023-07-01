@@ -13,7 +13,7 @@ export const User = ({ avatar_url, bio, followers, following, location, login, n
       <Avatar url_image={avatar_url} />
       <Title>{name}</Title>
       <h2>{login}</h2>
-      {bio ?? <p>{bio}</p>}S
+      {bio ?? <p>{bio}</p>}
       {location ?? <p>{location}</p>}
       <p>Seguidores: {followers}</p>
       <p>Seguindo: {following}</p>

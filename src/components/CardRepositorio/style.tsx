@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: ${props => props.theme.sizes.xs};
   margin: ${props => props.theme.sizes.xxs};
   width: 500px;
-  @media (max-width: 400px) {
+  @media (max-width: 530px) {
     width: 300px;
   }
 `

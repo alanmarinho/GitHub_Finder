@@ -275,7 +275,7 @@ display: none;
   padding: ${e=>e.theme.sizes.xs};
   margin: ${e=>e.theme.sizes.xxs};
   width: 500px;
-  @media (max-width: 400px) {
+  @media (max-width: 530px) {
     width: 300px;
   }
 `,T1=({name:e,description:t,language:n,stargazers_count:r,pushed_at:o,html_url:l})=>$.jsxs(D1,{children:[$.jsx("h2",{children:e}),$.jsx("h4",{children:t}),$.jsxs("h4",{children:["linguagem principal: ",n]}),$.jsxs("h4",{children:["Esquelas: ",r]}),$.jsxs("h4",{children:["Última atualização: ",o]}),$.jsx("a",{target:"_blank",href:l,children:$.jsx(Rh,{invert:!0,children:"Ver mais no GitHub"})})]}),j1=()=>{const e=Ao(),n=new URLSearchParams(e.search).get("user"),[r,o]=N.useState([]),l=async i=>{const s=(await(await fetch(`https://api.github.com/users/${i}/repos`)).json()).map(c=>{const{name:m,description:p,language:v,stargazers_count:y,pushed_at:w,html_url:P}=c;return{name:m,description:p,language:v,stargazers_count:y,pushed_at:w,html_url:P}});o(s)};return N.useEffect(()=>{n&&l(n)},[n]),console.log(r),$.jsx($.Fragment,{children:r.map(i=>$.jsx("div",{children:$.jsx(T1,{name:i.name,description:i.description,html_url:i.html_url,language:i.language,pushed_at:i.pushed_at,stargazers_count:i.stargazers_count})},i.name))})},I1=Cv([{path:"/",element:$.jsx(p1,{}),children:[{path:"/",element:$.jsx($1,{})},{path:"/repositorios",element:$.jsx(j1,{})}]}]);ma.createRoot(document.getElementById("root")).render($.jsx(wt.StrictMode,{children:$.jsx(mv,{router:I1})}));
